@@ -1,4 +1,4 @@
-<?php namespace tomjamescn\chineseCalendarUtils;
+<?php namespace tomjamescn\chineseCalendarUtils4php;
 
 
 class ChineseCalendarUtils{
