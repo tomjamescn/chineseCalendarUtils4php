@@ -1,7 +1,7 @@
 {
     "name": "tomjamescn/chinesecalendarutils4php",
     "description": "",
-    "keywords": ["chinese", "calendar", "utils", "½Ú¼ÙÈÕ"],
+    "keywords": ["chinese", "calendar", "utils", "èŠ‚å‡æ—¥"],
     "license": "",
     "authors": [
         {
@@ -13,6 +13,8 @@
     "require": {
 		"php": ">=5.4"
     },
+
+    "version": "2.0.0-dev",
 
 	"require-dev": {
 		"phpunit/phpunit": "5.2.*"

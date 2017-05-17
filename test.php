@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: tomjamescn
  * Date: 2017/5/16
- * Time: ÏÂÎç1:29
+ * Time: ä¸‹åˆ1:29
  */
 
 
@@ -11,8 +11,8 @@ function curl($url, $referer = '') {
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);   //Á¬½Ó³¬Ê±Ê±¼äÉèÖÃÎª10Ãë
-    curl_setopt($ch, CURLOPT_TIMEOUT, 60);          //´¦Àí³¬Ê±Ê±¼ä
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);   //è¿žæŽ¥è¶…æ—¶æ—¶é—´è®¾ç½®ä¸º10ç§’
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);          //å¤„ç†è¶…æ—¶æ—¶é—´
     curl_setopt($ch, CURLOPT_REFERER, $referer);
 
 
@@ -21,7 +21,7 @@ function curl($url, $referer = '') {
     $curlError = curl_error($ch);
     curl_close($ch);
     if($html === false || $curlErrno > 0) {
-        echo "curl´íÎó:{$curlError}\n";
+        echo "curlé”™è¯¯:{$curlError}\n";
         return false;
     }
     return $html;
@@ -56,7 +56,7 @@ while($curDate <= $endDate) {
         echo "$url\n";
         $ret = curl($url);
         if ($ret == 0 ) {
-            //¹¤×÷ÈÕ
+            //å·¥ä½œæ—¥
             $result['specialTradingDateList'][] = $curDate;
         }
     }
